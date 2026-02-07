@@ -1,0 +1,124 @@
+<div class="container">
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <body>
+
+            <audio autoplay loop>
+                <source src="rose-music.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="hearts-bg"></div>
+
+            <div class="container">
+
+                <!-- Typing Text -->
+                <h1 class="rose-text">
+                    <span id="typing"></span>
+                </h1>
+
+
+
+
+                <!-- Vase -->
+                <div class="vase"></div>
+
+                <div class="thorns">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="glow"></div>
+
+                <div class="rose-leaves">
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <div class="rose-petals">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+                <!-- Falling Petals -->
+                <div class="falling-petals">
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                </div>
+
+                <div class="sparkles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <button class="love-btn">Rose For My Baby ♡</button>
+            <script>
+                /* Typing Effect */
+                const text = "I Will Make You Happy Baby Just Wait and see For Every Kiss You Give Me I will Give you Three";
+                let i = 0;
+
+                function typeWriter() {
+                    if (i < text.length) {
+                        document.getElementById("typing").innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 150);
+                    }
+                }
+
+                /* Delay before typing starts */
+                setTimeout(() => {
+                    typeWriter();
+                }, 2000); // 2000ms = 2 seconds delay
+            </script>
+
+
+        </body>
+
+    </html>
+    <!-- <script>
+/* Typing Effect */
+const text = "I Will Make You Happy Baby Just Wait and see For Every Kiss You Give Me I will Give you Three";
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 80);
+    }
+}
+
+/* Delay before typing starts */
+setTimeout(() => {
+    typeWriter();
+}, 2000); // 2000ms = 2 seconds delay
+</script>
+ -->

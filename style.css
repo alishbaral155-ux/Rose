@@ -21,6 +21,7 @@
     background: linear-gradient(to bottom, #ff9ac4, #d94f87);
     border-radius: 10px;
 }
+
 .falling-petals span {
     position: absolute;
     width: 14px;
@@ -32,25 +33,51 @@
 }
 
 /* Different positions + delays */
-.falling-petals span:nth-child(1){ left: -60px; animation-delay: 0s; }
-.falling-petals span:nth-child(2){ left: 120px; animation-delay: 2s; }
-.falling-petals span:nth-child(3){ left: 60px; animation-delay: 4s; }
-.falling-petals span:nth-child(4){ left: -90px; animation-delay: 1s; }
-.falling-petals span:nth-child(5){ left: 150px; animation-delay: 3s; }
-.falling-petals span:nth-child(6){ left: 30px; animation-delay: 5s; }
+.falling-petals span:nth-child(1) {
+    left: -60px;
+    animation-delay: 0s;
+}
+
+.falling-petals span:nth-child(2) {
+    left: 120px;
+    animation-delay: 2s;
+}
+
+.falling-petals span:nth-child(3) {
+    left: 60px;
+    animation-delay: 4s;
+}
+
+.falling-petals span:nth-child(4) {
+    left: -90px;
+    animation-delay: 1s;
+}
+
+.falling-petals span:nth-child(5) {
+    left: 150px;
+    animation-delay: 3s;
+}
+
+.falling-petals span:nth-child(6) {
+    left: 30px;
+    animation-delay: 5s;
+}
 
 @keyframes fallPetal {
     0% {
         transform: translateY(-80px) rotate(0deg);
     }
+
     50% {
         transform: translateY(120px) rotate(180deg);
     }
+
     100% {
         transform: translateY(420px) rotate(360deg);
         opacity: 0;
     }
 }
+
 .rose-text {
     position: absolute;
     top: -120px;
@@ -61,25 +88,29 @@
     font-family: 'Segoe UI', cursive;
     color: #ff6fa5;
     text-shadow: 0 0 10px #ff2f87,
-                 0 0 20px #ff2f87,
-                 0 0 30px #ff2f87;
+        0 0 20px #ff2f87,
+        0 0 30px #ff2f87;
     animation: textGlow 3s ease-in-out infinite;
 }
 
 @keyframes textGlow {
-    0%,100% {
+
+    0%,
+    100% {
         text-shadow: 0 0 10px #ff2f87,
-                     0 0 20px #ff2f87;
+            0 0 20px #ff2f87;
     }
+
     50% {
         text-shadow: 0 0 20px #ff6fa5,
-                     0 0 40px #ff2f87;
+            0 0 40px #ff2f87;
     }
 }
+
 html,
 body {
-    height: 100%;
-    width: 100%;
+    height: 200%;
+    width: 200%;
     background: #122139;
     overflow: hidden;
 }
@@ -801,6 +832,7 @@ body {
         border-color: rgba(245, 148, 184, 0.4);
     }
 }
+
 .hearts-bg::before,
 .hearts-bg::after {
     content: "💖 💕 💗 💞 💓";
@@ -816,92 +848,133 @@ body {
 }
 
 @keyframes heartsFloat {
-    0% { transform: translateY(100vh); }
-    100% { transform: translateY(-100vh); }
+    0% {
+        transform: translateY(100vh);
+    }
+
+    100% {
+        transform: translateY(-100vh);
+    }
 }
+
 .vase {
     position: absolute;
     bottom: -40px;
     left: -5px;
     width: 90px;
     height: 80px;
-    background: linear-gradient(to bottom,#ff9ac4,#d94f87);
+    background: linear-gradient(to bottom, #ff9ac4, #d94f87);
     border-radius: 0 0 40px 40px;
-    box-shadow: 0 0 20px rgba(255,105,180,.5);
+    box-shadow: 0 0 20px rgba(255, 105, 180, .5);
 }
 
 .vase::before {
-    content:"";
-    position:absolute;
-    top:-25px;
-    left:20px;
-    width:50px;
-    height:30px;
-    background:inherit;
-    border-radius:10px;
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    width: 50px;
+    height: 30px;
+    background: inherit;
+    border-radius: 10px;
 }
+
 .falling-petals span {
-    position:absolute;
-    width:14px;
-    height:20px;
-    background:#ff4d88;
-    border-radius:50% 50% 50% 0;
-    animation:fallPetal 8s linear infinite;
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    background: #ff4d88;
+    border-radius: 50% 50% 50% 0;
+    animation: fallPetal 8s linear infinite;
 }
 
-.falling-petals span:nth-child(1){left:-60px;animation-delay:0s;}
-.falling-petals span:nth-child(2){left:120px;animation-delay:2s;}
-.falling-petals span:nth-child(3){left:60px;animation-delay:4s;}
-.falling-petals span:nth-child(4){left:-90px;animation-delay:1s;}
-.falling-petals span:nth-child(5){left:150px;animation-delay:3s;}
-.falling-petals span:nth-child(6){left:30px;animation-delay:5s;}
-
-@keyframes fallPetal{
-  0%{transform:translateY(-80px) rotate(0);}
-  100%{transform:translateY(420px) rotate(360deg);opacity:0;}
+.falling-petals span:nth-child(1) {
+    left: -60px;
+    animation-delay: 0s;
 }
+
+.falling-petals span:nth-child(2) {
+    left: 120px;
+    animation-delay: 2s;
+}
+
+.falling-petals span:nth-child(3) {
+    left: 60px;
+    animation-delay: 4s;
+}
+
+.falling-petals span:nth-child(4) {
+    left: -90px;
+    animation-delay: 1s;
+}
+
+.falling-petals span:nth-child(5) {
+    left: 150px;
+    animation-delay: 3s;
+}
+
+.falling-petals span:nth-child(6) {
+    left: 30px;
+    animation-delay: 5s;
+}
+
+@keyframes fallPetal {
+    0% {
+        transform: translateY(-80px) rotate(0);
+    }
+
+    100% {
+        transform: translateY(420px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
 .rose-text {
-    position:absolute;
-    top:-130px;
-    left:-140px;
-    width:320px;
-    text-align:center;
-    font-size:28px;
-    color:#ff6fa5;
-    font-family:cursive;
-    text-shadow:0 0 10px #ff2f87,0 0 20px #ff2f87;
-}
-.love-btn{
-    position:absolute;
-    top:260px;
-    left:-2px;
-    padding:10px 20px;
-    border:none;
-    border-radius:30px;
-    background:#ff4d88;
-    color:white;
-    font-size:16px;
-    cursor:pointer;
-    box-shadow:0 0 15px #ff4d88;
-    animation:pulseBtn 2s infinite;
+    position: absolute;
+    top: -130px;
+    left: -140px;
+    width: 320px;
+    text-align: center;
+    font-size: 28px;
+    color: #ff6fa5;
+    font-family: cursive;
+    text-shadow: 0 0 10px #ff2f87, 0 0 20px #ff2f87;
 }
 
-@keyframes pulseBtn{
-  0%,100%{transform:scale(1);}
-  50%{transform:scale(1.1);}
+.love-btn {
+    position: absolute;
+    top: 260px;
+    left: -2px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    background: #ff4d88;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff4d88;
+    animation: pulseBtn 2s infinite;
 }
-@media (max-width:600px){
-  .container{
-    transform:scale(0.45);
-  }
 
-  .rose-text{
-    font-size:20px;
-    top:-110px;
-  }
+@keyframes pulseBtn {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
 }
 
+@media (max-width:600px) {
+    .container {
+        transform: scale(0.45);
+    }
 
-
-
-
+    .rose-text {
+        font-size: 20px;
+        top: -110px;
+    }
+}
